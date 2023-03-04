@@ -11,4 +11,4 @@ phases:
       - docker run -i loadimpact/k6 run - <mao_na_massa/exemplo1.js
     post_build:
       commands:
-        - echo Teste de Performance Finalizado!
+        - echo Teste de Performance Finalizado! 

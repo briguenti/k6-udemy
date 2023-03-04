@@ -5,10 +5,10 @@ phases:
     commands:
       - echo Pull loadimpact/k6 image...
       - docker pull loadimpact/k6
-    build:
-      commands:
+  build:
+    commands:
       - echo Executando Teste de Performance
       - docker run -i loadimpact/k6 run - <mao_na_massa/exemplo1.js
-    post_build:
-      commands:
+  post_build:
+    commands:
         - echo Teste de Performance Finalizado! 

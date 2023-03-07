@@ -13,3 +13,11 @@ jobs:
         uses: grafana/k6-action@v0.2.0
         with: #informando o arquivo
           filename: mao_na_massa/exemplo1.js
+      
+      - run: ls & mkdir report & mv index.html report
+
+      - name: Step 3 - Upload Artifact
+        uses: actions/upload-artifact@v3
+        with: #nome para o artefato de saída
+          name: Relatório de testes de performance
+          path: report
